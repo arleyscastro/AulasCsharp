@@ -1,0 +1,5 @@
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\bin\Debug\netcoreapp3.1\Cad.Infra.deps.json
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\bin\Debug\netcoreapp3.1\Cad.Infra.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.csprojAssemblyReference.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.AssemblyInfoInputs.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.AssemblyInfo.cs

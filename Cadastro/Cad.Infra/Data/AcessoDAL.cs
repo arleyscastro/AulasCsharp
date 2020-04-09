@@ -56,6 +56,13 @@ namespace Cad.Infra.Data
             return cmd;
         }
 
+        protected SqlCommand CriaSqlCommand(string sql, CommandType tipo)
+        {
+            SqlCommand cmd = CriaSqlConnection().CreateCommand();
+            cmd.CommandType = tipo;
+            cmd.CommandText = sql;
+            return cmd;
+        }
 
     }
 }

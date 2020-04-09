@@ -1,0 +1,9 @@
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\bin\Debug\netcoreapp3.1\Cad.Dominio.deps.json
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\bin\Debug\netcoreapp3.1\Cad.Dominio.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\bin\Debug\netcoreapp3.1\Cad.Dominio.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.csprojAssemblyReference.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.csproj.CoreCompileInputs.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.AssemblyInfoInputs.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.AssemblyInfo.cs
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.pdb

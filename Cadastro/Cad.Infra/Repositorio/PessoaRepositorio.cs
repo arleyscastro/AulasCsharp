@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Text;
-using Cad.Dominio.Entidades;
+﻿using Cad.Dominio.Entidades;
 using Cad.Dominio.Interfaces;
 using Cad.Infra.Data;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Cad.Infra.Repositorio
 {
@@ -49,17 +49,53 @@ namespace Cad.Infra.Repositorio
 
         public void Alterar(Pessoa pessoa)
         {
-            throw new NotImplementedException();
+            string sql = "UPDATE pessoa SET ";
+            sql += "Nome=?, Nascimento=?, Cpf=?, Sexo=?";
+            sql += " WHERE id=?";
+
+            try
+            {
+                cmd = CriaSqlCommand(sql, CommandType.Text);
+                cmd.Parameters.AddWithValue("@Nome", pessoa.Nome);
+                cmd.Parameters.AddWithValue("@Nascimento",pessoa.Nascimento);
+                cmd.Parameters.AddWithValue("@Cpf", pessoa.Cpf);
+                cmd.Parameters.AddWithValue("@Sexo", pessoa.Sexo);
+                cmd.Parameters.AddWithValue("@id", pessoa.id);
+                int linha = cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                MsgErro = string.Format(Mensagens.Mensagem.Update, linha);
+
+            }
+            catch (Exception e)
+            {
+                MsgErro = e.Message;
+            }
+
         }
 
         public int CalculaIdade(Pessoa pessoa)
         {
-            throw new NotImplementedException();
+            return DateTime.Now.Year - pessoa.Nascimento.Year;
         }
 
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            string sql = "DELETE FROM pessoa";
+            sql += " WHERE id=?";
+
+            try
+            {
+                cmd = CriaSqlCommand(sql, CommandType.Text);
+                cmd.Parameters.AddWithValue("@id", id);
+                int linha = cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                MsgErro = string.Format(Mensagens.Mensagem.Delete, linha);
+
+            }
+            catch (Exception e)
+            {
+                MsgErro = e.Message;
+            }
         }
 
         public string Erro()
@@ -69,17 +105,86 @@ namespace Cad.Infra.Repositorio
 
         public void Incluir(Pessoa pessoa)
         {
-            throw new NotImplementedException();
+            string sql = "INSERT INTO pessoa ";
+            sql += "(Nome, Nascimento, Cpf, Sexo)";
+            sql += " VALUES ";
+            sql += "(?, ?, ?, ?)";
+
+            try
+            {
+                cmd = CriaSqlCommand(sql, CommandType.Text);
+                cmd.Parameters.AddWithValue("@Nome", pessoa.Nome);
+                cmd.Parameters.AddWithValue("@Nascimento",pessoa.Nascimento);
+                cmd.Parameters.AddWithValue("@Cpf", pessoa.Cpf);
+                cmd.Parameters.AddWithValue("@Sexo", pessoa.Sexo);
+                int linha = cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                MsgErro = string.Format(Mensagens.Mensagem.Insert, linha);
+
+            }
+            catch (Exception e)
+            {
+                MsgErro = e.Message;
+            }
         }
 
         public List<Pessoa> ObterLista(Pessoa pessoa)
         {
-            throw new NotImplementedException();
+            List<Pessoa> listaPessoas = new List<Pessoa>();
+            string sql = this.MontaSql(pessoa);
+            try
+            {
+                dr = CriaDataReader(sql);
+                while (dr.Read())
+                {
+                    listaPessoas.Add(
+                        new Pessoa
+                            {
+                                id = (int)dr["id"],
+                                Nome = (string)dr["Nome"],
+                                Cpf = (string)dr["Cpf"],
+                                Nascimento = (DateTime)dr["Nascimento"],
+                                Sexo = (string)dr["Sexo"]
+                            }
+                        );
+                }
+                dr.Close();
+            }
+            catch (Exception e)
+            {
+                MsgErro = e.Message;
+            }
+
+            return listaPessoas;
         }
 
         public Pessoa ObterUmRegistro(int id)
         {
-            throw new NotImplementedException();
+            Pessoa pessoa = new Pessoa();
+            string sql = this.MontaSql(new Pessoa { id = id });
+
+            try
+            {
+                dr = CriaDataReader(sql);
+                while (dr.Read())
+                {
+                    pessoa = new Pessoa
+                    {
+                        id = (int) dr["id"],
+                        Nome = (string) dr["Nome"],
+                        Cpf = (string) dr["Cpf"],
+                        Nascimento = (DateTime) dr["Nascimento"],
+                        Sexo = (string) dr["Sexo"]
+                    };
+                }
+                dr.Close();
+            }
+            catch (Exception e)
+            {
+                MsgErro = e.Message;
+            }
+
+            return pessoa;
         }
     }
 }

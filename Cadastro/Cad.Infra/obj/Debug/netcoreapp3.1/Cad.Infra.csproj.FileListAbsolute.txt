@@ -3,3 +3,10 @@ D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\bin\Debug\netcoreapp3.1\Cad.
 D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.csprojAssemblyReference.cache
 D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.AssemblyInfoInputs.cache
 D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.AssemblyInfo.cs
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\bin\Debug\netcoreapp3.1\Cad.Infra.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\bin\Debug\netcoreapp3.1\Cad.Dominio.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\bin\Debug\netcoreapp3.1\Cad.Dominio.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.csproj.CoreCompileInputs.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.csproj.CopyComplete
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Infra\obj\Debug\netcoreapp3.1\Cad.Infra.pdb

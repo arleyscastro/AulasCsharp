@@ -118,3 +118,5 @@ D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\UI.Cadastro\bin\Debug\netcoreapp3.1\zh
 D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\UI.Cadastro\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\UI.Cadastro\obj\Debug\netcoreapp3.1\UI.Cadastro.csproj.CoreCompileInputs.cache
 D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\UI.Cadastro\obj\Debug\netcoreapp3.1\UI.Cadastro.MvcApplicationPartsAssemblyInfo.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\UI.Cadastro\obj\Debug\netcoreapp3.1\Razor\Views\Pessoa\Index.cshtml.g.cs
+D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\UI.Cadastro\obj\Debug\netcoreapp3.1\Razor\Views\Pessoa\Create.cshtml.g.cs

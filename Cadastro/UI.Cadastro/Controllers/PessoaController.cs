@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Cad.Dominio.Entidades;
 using Cad.Dominio.Interfaces;
 using Cad.Infra.Repositorio;
 using Microsoft.AspNetCore.Http;
@@ -34,7 +35,9 @@ namespace UI.Cadastro.Controllers
         // GET: Pessoa
         public ActionResult Index()
         {
-            return View();
+            PessoaViewModel aux = new PessoaViewModel();
+
+            return View(aux.ListaPessoasViewModel(_pessoaServico.ObterLista(new Pessoa())));
         }
 
         // GET: Pessoa/Details/5
@@ -46,7 +49,7 @@ namespace UI.Cadastro.Controllers
         // GET: Pessoa/Create
         public ActionResult Create()
         {
-            return View();
+            return View(new PessoaViewModel());
         }
 
         // POST: Pessoa/Create
@@ -56,14 +59,19 @@ namespace UI.Cadastro.Controllers
         {
             try
             {
-                // TODO: Add insert logic here
+                if (ModelState.IsValid)
+                {
+                    _pessoaServico.Incluir(pessoa.UmaPessoaDominio(pessoa));
+                    return RedirectToAction(nameof(Index));
+                }
 
-                return RedirectToAction(nameof(Index));
+                
             }
             catch
             {
                 return View();
             }
+            return View();
         }
 
         // GET: Pessoa/Edit/5
@@ -92,7 +100,11 @@ namespace UI.Cadastro.Controllers
         // GET: Pessoa/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            if (id > 0)
+            {
+                _pessoaServico.Deletar(id);
+            }
+            return RedirectToAction(nameof(Index));
         }
 
         // POST: Pessoa/Delete/5

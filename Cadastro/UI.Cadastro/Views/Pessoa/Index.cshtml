@@ -1,0 +1,59 @@
+﻿@model IEnumerable<UI.Cadastro.Models.PessoaViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="container-fluid">
+    <h1>Listagem de Pessoas</h1>
+</section>
+
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="box-shadow">
+                <div class="card-header">
+                    
+                    <a class="btn btn-info" asp-controller="Pessoa" asp-action="Create">Criar nova pessoa</a>
+
+                </div>
+                
+                <div class="container-fluid">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <td>CÓDIGO</td>
+                            <td>NOME</td>
+                            <td>DT NASCIMENTO</td>
+                            <td>CPF</td>
+                            <td>SEXO</td>
+                            <td>AÇÃO</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(mdeloItem => item.id)</td>
+                                <td>@Html.DisplayFor(mdeloItem => item.Nome)</td>
+                                <td>@Html.DisplayFor(mdeloItem => item.Nascimento)</td>
+                                <td>@Html.DisplayFor(mdeloItem => item.Cpf)</td>
+                                <td>@Html.DisplayFor(mdeloItem => item.Sexo)</td>
+                                <td>
+                                    <a asp-action="Details" asp-controller="Pessoa" asp-route-id="@item.id" >Detalhe</a> |
+                                    @Html.ActionLink("Editar", "Edit", item.id) |
+                                    <a asp-action="Delete" asp-controller="Pessoa" asp-route-id="@item.id">Deletar</a>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+   

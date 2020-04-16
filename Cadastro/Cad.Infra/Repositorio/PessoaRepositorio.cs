@@ -50,8 +50,8 @@ namespace Cad.Infra.Repositorio
         public void Alterar(Pessoa pessoa)
         {
             string sql = "UPDATE pessoa SET ";
-            sql += "Nome=?, Nascimento=?, Cpf=?, Sexo=?";
-            sql += " WHERE id=?";
+            sql += "Nome=@Nome, Nascimento=@Nascimento, Cpf=@Cpf, Sexo=@Sexo";
+            sql += " WHERE id=@id";
 
             try
             {
@@ -81,7 +81,7 @@ namespace Cad.Infra.Repositorio
         public void Deletar(int id)
         {
             string sql = "DELETE FROM pessoa";
-            sql += " WHERE id=?";
+            sql += " WHERE id=@id";
 
             try
             {
@@ -108,7 +108,7 @@ namespace Cad.Infra.Repositorio
             string sql = "INSERT INTO pessoa ";
             sql += "(Nome, Nascimento, Cpf, Sexo)";
             sql += " VALUES ";
-            sql += "(?, ?, ?, ?)";
+            sql += "(@Nome, @Nascimento, @Cpf, @Sexo)";
 
             try
             {

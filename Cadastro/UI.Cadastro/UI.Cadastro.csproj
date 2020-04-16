@@ -13,8 +13,4 @@
     <ProjectReference Include="..\Cad.Infra\Cad.Infra.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Pessoa\" />
-  </ItemGroup>
-
 </Project>

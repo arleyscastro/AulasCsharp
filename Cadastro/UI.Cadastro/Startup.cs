@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -23,6 +24,11 @@ namespace UI.Cadastro
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var cultureInfo = new CultureInfo("pt-br");
+            cultureInfo.NumberFormat.CurrencySymbol = "R$";
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
             services.AddMvc();
             services.AddControllersWithViews();
             services.AddDistributedMemoryCache();

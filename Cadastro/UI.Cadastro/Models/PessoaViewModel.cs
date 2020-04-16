@@ -14,6 +14,7 @@ namespace UI.Cadastro.Models
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Data de nascimento é obrigatório!")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime Nascimento { get; set; }
 
         [Required(ErrorMessage = "O CPF é obrigatório!", AllowEmptyStrings = false)]

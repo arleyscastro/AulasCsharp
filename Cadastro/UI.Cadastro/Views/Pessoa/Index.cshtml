@@ -19,7 +19,7 @@
 
                 </div>
                 
-                <div class="container-fluid">
+                <div class="container-fluid table-responsive">
                     <table class="table table-bordered table-striped">
                         <thead>
                         <tr>
@@ -37,7 +37,7 @@
                             <tr>
                                 <td>@Html.DisplayFor(mdeloItem => item.id)</td>
                                 <td>@Html.DisplayFor(mdeloItem => item.Nome)</td>
-                                <td>@Html.DisplayFor(mdeloItem => item.Nascimento)</td>
+                                <td>@String.Format("{0:dd/MM/yyyy}", item.Nascimento) </td>
                                 <td>@Html.DisplayFor(mdeloItem => item.Cpf)</td>
                                 <td>@Html.DisplayFor(mdeloItem => item.Sexo)</td>
                                 <td>

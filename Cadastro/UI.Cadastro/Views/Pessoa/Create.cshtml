@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-sm-6">
                         <label asp-for="Nascimento" class="control-label"></label>
-                        <input asp-for="Nascimento" class="form-control" />
+                        <input asp-for="Nascimento" class="form-control" maxlength="10" onkeypress="mascaraData(this)"/>
                         <span asp-validation-for="Nascimento" class="text-danger"></span>
                     </div>
                 </div>
@@ -52,3 +52,71 @@
     </div>
 </div>
 
+<script>
+    function mascaraData(val) {
+        var pass = val.value;
+        var expr = /[0123456789]/;
+        var i;
+        var tst1, tst2;
+        for (i = 0; i < pass.length; i++) {
+            var lchar = val.value.charAt(i);
+            var nchar = val.value.charAt(i + 1);
+
+            if (i === 0) {
+                if ((lchar.search(expr) !== 0) || (lchar > 3)) {
+                    val.value = "";
+                }
+
+            } else if (i === 1) {
+
+                if (lchar.search(expr) !== 0) {
+                    tst1 = val.value.substring(0, (i));
+                    val.value = tst1;
+                    continue;
+                }
+
+                if ((nchar !== '/') && (nchar !== '')) {
+                    tst1 = val.value.substring(0, (i) + 1);
+
+                    if (nchar.search(expr) !== 0)
+                        tst2 = val.value.substring(i + 2, pass.length);
+                    else
+                        tst2 = val.value.substring(i + 1, pass.length);
+
+                    val.value = tst1 + '/' + tst2;
+                }
+
+            } else if (i === 4) {
+
+                if (lchar.search(expr) !== 0) {
+                    tst1 = val.value.substring(0, (i));
+                    val.value = tst1;
+                    continue;
+                }
+
+                if ((nchar !== '/') && (nchar !== '')) {
+                    tst1 = val.value.substring(0, (i) + 1);
+
+                    if (nchar.search(expr) !== 0)
+                        tst2 = val.value.substring(i + 2, pass.length);
+                    else
+                        tst2 = val.value.substring(i + 1, pass.length);
+
+                    val.value = tst1 + '/' + tst2;
+                }
+            }
+
+            if (i >= 6) {
+                if (lchar.search(expr) !== 0) {
+                    tst1 = val.value.substring(0, (i));
+                    val.value = tst1;
+                }
+            }
+        }
+
+        if (pass.length > 10)
+            val.value = val.value.substring(0, 10);
+        return true;
+    }
+
+</script>

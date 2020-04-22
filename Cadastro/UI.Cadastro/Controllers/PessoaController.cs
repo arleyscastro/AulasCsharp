@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Cad.Dominio.Entidades;
+﻿using Cad.Dominio.Entidades;
 using Cad.Dominio.Interfaces;
 using Cad.Infra.Repositorio;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using System.IO;
 using UI.Cadastro.Models;
 
 namespace UI.Cadastro.Controllers
@@ -43,7 +39,11 @@ namespace UI.Cadastro.Controllers
         // GET: Pessoa/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            PessoaViewModel pessoa = new PessoaViewModel();
+
+            pessoa = pessoa.UmaPessoaViewModel(_pessoaServico.ObterUmRegistro(id));
+
+            return PartialView("PessoaDetalhe",pessoa);
         }
 
         // GET: Pessoa/Create
@@ -77,51 +77,43 @@ namespace UI.Cadastro.Controllers
         // GET: Pessoa/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            PessoaViewModel pessoa = new PessoaViewModel();
+
+            pessoa = pessoa.UmaPessoaViewModel(_pessoaServico.ObterUmRegistro(id));
+
+            return View(pessoa);
         }
 
         // POST: Pessoa/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(PessoaViewModel pessoa)
         {
             try
             {
-                // TODO: Add update logic here
-
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    _pessoaServico.Alterar(pessoa.UmaPessoaDominio(pessoa));
+                }
             }
             catch
             {
-                return View();
+                return View(pessoa);
             }
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: Pessoa/Delete/5
-        public ActionResult Delete(int id)
+        [HttpPost]
+        public bool Delete(int id)
         {
             if (id > 0)
             {
                 _pessoaServico.Deletar(id);
             }
-            return RedirectToAction(nameof(Index));
+
+            return _pessoaServico.Erro().Contains("Deleção");
         }
 
-        // POST: Pessoa/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+       
     }
 }

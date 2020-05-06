@@ -91,10 +91,7 @@ namespace UI.Cadastro.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
-                {
-                    _pessoaServico.Alterar(pessoa.UmaPessoaDominio(pessoa));
-                }
+                _pessoaServico.Alterar(pessoa.UmaPessoaDominio(pessoa));
             }
             catch
             {

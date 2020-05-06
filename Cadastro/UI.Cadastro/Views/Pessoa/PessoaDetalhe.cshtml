@@ -1,36 +1,28 @@
 ﻿@model UI.Cadastro.Models.PessoaViewModel
-
-<div>
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nascimento)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nascimento)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cpf)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cpf)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Sexo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Sexo)
-        </dd>
-    </dl>
+<div class="container-fluid">
+    <h3>Código: @Html.DisplayFor(model => model.id)</h3>
+    <div class="row">
+        <div class="col-md-12 mx-auto">
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Nome) : 
+                    @Html.DisplayFor(model => model.Nome)
+                </div>
+                <div class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Nascimento) : 
+                    @String.Format("{0:dd/MM/yyyy}", Model.Nascimento)
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Cpf) : 
+                    @Html.DisplayFor(model => model.Cpf)
+                </div>
+                <div class="col-sm-6">
+                    @Html.DisplayNameFor(model => model.Sexo) : 
+                    @Html.DisplayFor(model => model.Sexo)
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

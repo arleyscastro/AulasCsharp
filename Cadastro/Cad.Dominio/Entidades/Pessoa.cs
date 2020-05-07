@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Cad.Dominio.Entidades
 {
@@ -9,5 +10,11 @@ namespace Cad.Dominio.Entidades
         public DateTime Nascimento { get; set; }
         public string Cpf { get; set; }
         public string Sexo { get; set; }
+        public List<Contato> Contatos { get; set; }
+
+        public Pessoa()
+        {
+            Contatos = new List<Contato>();
+        }
     }
 }

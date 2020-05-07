@@ -81,6 +81,8 @@ namespace UI.Cadastro.Controllers
 
             pessoa = pessoa.UmaPessoaViewModel(_pessoaServico.ObterUmRegistro(id));
 
+            ViewBag.idPessoa = id;
+
             return View(pessoa);
         }
 

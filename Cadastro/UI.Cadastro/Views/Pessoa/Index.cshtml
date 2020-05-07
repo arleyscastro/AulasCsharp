@@ -42,7 +42,7 @@
                                 <td>@Html.DisplayFor(mdeloItem => item.Sexo)</td>
                                 <td>
                                     <a class="btn" id="@item.id" onclick="ChamaModal(this.id)">Detalhe</a> |
-                                    <a asp-area="" asp-controller="Pessoa" asp-action="Edit" asp-route-id="@item.id">Editar</a> |
+                                    <a class="btn" asp-area="" asp-controller="Pessoa" asp-action="Edit" asp-route-id="@item.id">Editar</a> |
                                     <a class="btn" onclick="DeletarUsandoAjax('@item.id')">Deletar</a>
                                 </td>
                             </tr>
@@ -83,10 +83,8 @@
 
         function ChamaModal(id) {
 
-            //alert("aqui");
             $("#corpo").load("/Pessoa/Details/" + id,
                 function() {
-                    //alert("Dentro");
                     $("#exampleModal").modal('show');
                 });
 

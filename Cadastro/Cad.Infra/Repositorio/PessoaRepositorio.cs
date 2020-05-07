@@ -15,9 +15,12 @@ namespace Cad.Infra.Repositorio
         private SqlCommand cmd;
         private string MsgErro;
 
+        private IContatoServico _contatoServico;
+
         public PessoaRepositorio(string strConexao): base(strConexao)
         {
             cnxSqlServer = strConexao;
+            _contatoServico = new ContatoRepositorio(strConexao);
         }
 
         private string MontaSql(Pessoa pessoa)
@@ -174,7 +177,8 @@ namespace Cad.Infra.Repositorio
                         Nome = (string) dr["Nome"],
                         Cpf = (string) dr["Cpf"],
                         Nascimento = (DateTime) dr["Nascimento"],
-                        Sexo = (string) dr["Sexo"]
+                        Sexo = (string) dr["Sexo"],
+                        Contatos = _contatoServico.ObterLista(new Contato{idPessoa = (int) dr["id"]})
                     };
                 }
                 dr.Close();

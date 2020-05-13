@@ -75,6 +75,7 @@ namespace UI.Cadastro.Controllers
         }
 
         // GET: Pessoa/Edit/5
+        [HttpGet]
         public ActionResult Edit(int id)
         {
             PessoaViewModel pessoa = new PessoaViewModel();

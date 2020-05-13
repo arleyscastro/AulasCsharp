@@ -72,7 +72,7 @@
             
         </div>
         <div class="col-sm-12">
-            <a class="btn btn-info" onclick="MontaContato();">Incluir</a>
+            <a class="btn btn-info" onclick="InserirNovoContato();">Incluir</a>
         </div>
         <div class="col-sm-12">
             <div id="gridContato">
@@ -86,7 +86,7 @@
 
     window.onload = function() {
         MontaContato();
-    } 
+    }
 
     function MontaContato() {
         var sIdPessoa = document.getElementById("idPessoa").value;
@@ -104,7 +104,62 @@
         }).fail(function(response) {
             alert("Erro :" + response);
         });
+    }
+
+    function InserirNovoContato(){
+        var sIdPessoa = document.getElementById("idPessoa").value;
+        var sContato = document.getElementById("txtContato").value;
+        var sTipoContato = cmboTipo.options[cmboTipo.selectedIndex].value;
+
+        //alert("Idpessoa: " + sIdPessoa + " Contato: " + sContato + " Tipo: " + sTipoContato);
+
+        $.ajax({
+            url: '@Url.Action("InsereContato", "Contato")',
+            type: "POST",
+            data: {
+                id: 0,
+                idPessoa: sIdPessoa,
+                TipoContato: sTipoContato,
+                contato: sContato
+            },
+            beforeSend: function() {
+                $("#gridContato").html('<h1>Aguarde enquanto carrega</h1>');
+            }
+
+        }).done(function(response) {
+            $("#gridContato").html(response);
+
+        }).fail(function(response) {
+            alert("Erro :" + response);
+        });
 
     }
+
+    function DeletaContato(sid) {
+
+        var resp = confirm("Deseja realmente deletar este registro?");
+
+        if (resp === true) {
+            $.ajax({
+                url: '@Url.Action("DeletaContato", "Contato")',
+                type: "DELETE",
+                data: {
+                    id: sid
+                },
+                beforeSend: function() {
+                    $("#gridContato").html('<h1>Aguarde enquanto carrega</h1>');
+                }
+
+            }).done(function(response) {
+                $("#gridContato").html(response);
+
+            }).fail(function(response) {
+                alert("Erro :" + response);
+            });
+        }
+
+    }
+    
+
 </script>
 

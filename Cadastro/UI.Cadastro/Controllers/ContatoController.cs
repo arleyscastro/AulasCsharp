@@ -60,6 +60,7 @@ namespace UI.Cadastro.Controllers
             grid += "        <td>COD#</td>";
             grid += "        <td>TIPO</td>";
             grid += "        <td>CONTATO</td>";
+            grid += "        <td>AÇÃO</td>";
             grid += "    </tr>";
             grid += "    </thead>";
             grid += "    <tbody>";
@@ -73,9 +74,10 @@ namespace UI.Cadastro.Controllers
                 grid += "        <td>" + um.id + "</td>";
                 grid += "        <td>" + TipoContatoDescricao(um.TipoContato) + "</td>";
                 grid += "        <td>" + um.contato + "</td>";
+                grid += "        <td>" + "<a class=\"btn\" onclick=\"DeletaContato(" + um.id + ");\">Deletar</a>" + "</td>";
                 grid += "    </tr>";    
             }
-
+            //
             grid += "    </tbody>";
             grid += "</table>";
 
@@ -89,11 +91,22 @@ namespace UI.Cadastro.Controllers
         }
 
         [HttpPost]
-        public string InsereContato(Contato contato)
+        public string InsereContato(int id, int idPessoa, string TipoContato, string contato)
         {
-            _contatoServico.Incluir(contato);
 
-            return TableContato(contato.idPessoa);
+            _contatoServico.Incluir(new Contato{ idPessoa = idPessoa, TipoContato = TipoContato, contato = contato});
+
+            return TableContato(idPessoa);
+        }
+
+        [HttpDelete]
+        public string DeletaContato(int id)
+        {
+            Contato cont = _contatoServico.ObterUmRegistro(id);
+
+            _contatoServico.Deletar(id);
+
+            return TableContato(cont.idPessoa);
         }
 
     }

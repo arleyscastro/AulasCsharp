@@ -6,4 +6,3 @@ D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Ca
 D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.AssemblyInfo.cs
 D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.dll
 D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.pdb
-D:\Temp\AulaCs\Aula5\AulasCsharp\Cadastro\Cad.Dominio\obj\Debug\netcoreapp3.1\Cad.Dominio.csprojAssemblyReference.cache

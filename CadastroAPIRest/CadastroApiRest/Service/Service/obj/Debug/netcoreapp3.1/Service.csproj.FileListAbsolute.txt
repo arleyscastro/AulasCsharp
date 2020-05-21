@@ -1,0 +1,5 @@
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\bin\Debug\netcoreapp3.1\Service.deps.json
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\bin\Debug\netcoreapp3.1\Service.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs

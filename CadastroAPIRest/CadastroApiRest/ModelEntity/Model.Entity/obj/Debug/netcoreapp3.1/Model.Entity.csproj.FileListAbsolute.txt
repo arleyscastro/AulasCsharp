@@ -3,3 +3,7 @@ D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\ModelEntity\Mod
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\ModelEntity\Model.Entity\obj\Debug\netcoreapp3.1\Model.Entity.csprojAssemblyReference.cache
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\ModelEntity\Model.Entity\obj\Debug\netcoreapp3.1\Model.Entity.AssemblyInfoInputs.cache
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\ModelEntity\Model.Entity\obj\Debug\netcoreapp3.1\Model.Entity.AssemblyInfo.cs
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\ModelEntity\Model.Entity\bin\Debug\netcoreapp3.1\Model.Entity.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\ModelEntity\Model.Entity\obj\Debug\netcoreapp3.1\Model.Entity.csproj.CoreCompileInputs.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\ModelEntity\Model.Entity\obj\Debug\netcoreapp3.1\Model.Entity.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\ModelEntity\Model.Entity\obj\Debug\netcoreapp3.1\Model.Entity.pdb

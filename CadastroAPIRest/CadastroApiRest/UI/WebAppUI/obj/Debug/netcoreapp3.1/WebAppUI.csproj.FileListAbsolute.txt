@@ -6,8 +6,6 @@ D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\WebAppUI.AssemblyInfoInputs.cache
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\WebAppUI.AssemblyInfo.cs
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\WebAppUI.RazorTargetAssemblyInfo.cache
-D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\staticwebassets\WebAppUI.StaticWebAssets.Manifest.cache
-D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\staticwebassets\WebAppUI.StaticWebAssets.xml
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -54,3 +52,17 @@ D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\WebAppUI.deps.json
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\WebAppUI.runtimeconfig.json
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\WebAppUI.runtimeconfig.dev.json
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\WebAppUI.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\WebAppUI.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\Model.Entity.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\Service.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\Model.Entity.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\bin\Debug\netcoreapp3.1\Service.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\WebAppUI.csproj.CoreCompileInputs.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\WebAppUI.MvcApplicationPartsAssemblyInfo.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\WebAppUI.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\WebAppUI.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\UI\WebAppUI\obj\Debug\netcoreapp3.1\WebAppUI.genruntimeconfig.cache

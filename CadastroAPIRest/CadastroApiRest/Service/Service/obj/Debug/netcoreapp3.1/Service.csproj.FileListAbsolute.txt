@@ -3,3 +3,10 @@ D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
 D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\bin\Debug\netcoreapp3.1\Service.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\bin\Debug\netcoreapp3.1\Model.Entity.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\bin\Debug\netcoreapp3.1\Model.Entity.pdb
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.dll
+D:\Temp\AulaCs\Aula5\AulasCsharp\CadastroAPIRest\CadastroApiRest\Service\Service\obj\Debug\netcoreapp3.1\Service.pdb

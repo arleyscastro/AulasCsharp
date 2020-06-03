@@ -1,15 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Model.Entity;
+using Model.Entity.Base;
+using Service.Interfaces;
+using Service.Servico;
+
 
 namespace WebAppUI
 {
@@ -25,6 +25,15 @@ namespace WebAppUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Mapeamento para as interfaces e repositório
+            services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
+
+            services.AddDbContext<AppContext>(op => 
+                op.UseSqlServer(Configuration.GetConnectionString("DataBase")));
+
+            //Mapeamento das interfaces de serviços
+            services.AddTransient<IPessoa, PessoaServico>();
+
             services.AddControllers();
         }
 

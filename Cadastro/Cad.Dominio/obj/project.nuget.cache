@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QIMe0FqgcWUpZ7BSpu775088GlOL77CQ6In5OONs5B7Ojna2Gnq3HXSVGYdAKGGiVdDRHAoCgly6J947Wb7mEw==",
+  "dgSpecHash": "n6Tg5wXp1hPJMWTAJK5HTpfxksBPBSdY2oqUnPTqUmLNuEjRmV6pFXp6OUM8eKdS2tEl5w0GLUDOB65Ff4O9jQ==",
   "success": true,
   "projectFilePath": "D:\\Temp\\AulaCs\\Aula5\\AulasCsharp\\Cadastro\\Cad.Dominio\\Cad.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Arleys\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

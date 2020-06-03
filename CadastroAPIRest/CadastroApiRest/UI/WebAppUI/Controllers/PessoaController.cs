@@ -27,12 +27,12 @@ namespace WebAppUI.Controllers
             return _pessoa.GetAll();
         }
 
-        [HttpGet("meleka")]
-        public IEnumerable<Pessoa> OutroGet()
-        {
-            //regra de negócio
-            return _pessoa.GetAll();
-        }
+        //[HttpGet("meleka")]
+        //public IEnumerable<Pessoa> OutroGet()
+        //{
+        //    //regra de negócio
+        //    return _pessoa.GetAll();
+        //}
 
         [HttpGet("{id}")]
         public Pessoa Get(int id)

@@ -30,16 +30,19 @@ namespace Model.Entity
         public void Insert(TEntity entidade)
         {
             _entities.Add(entidade);
+            _context.SaveChanges();
         }
 
         public void Update(TEntity entidade)
         {
             _entities.Update(entidade);
+            _context.SaveChanges();
         }
 
         public void Delete(TEntity entidade)
         {
             _entities.Remove(entidade);
+            _context.SaveChanges();
         }
     }
 }

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Model.Entity.Entity;
 using Service.Interfaces;
+using System.Collections.Generic;
 
 namespace WebAppUI.Controllers
 {
@@ -27,13 +23,6 @@ namespace WebAppUI.Controllers
             return _pessoa.GetAll();
         }
 
-        //[HttpGet("meleka")]
-        //public IEnumerable<Pessoa> OutroGet()
-        //{
-        //    //regra de negócio
-        //    return _pessoa.GetAll();
-        //}
-
         [HttpGet("{id}")]
         public Pessoa Get(int id)
         {
@@ -45,6 +34,18 @@ namespace WebAppUI.Controllers
         public void Post([FromBody] Pessoa pessoa)
         {
             _pessoa.Insert(pessoa);
+        }
+
+        [HttpPut]
+        public void Put([FromBody] Pessoa pessoa)
+        {
+            _pessoa.Update(pessoa);
+        }
+
+        [HttpDelete]
+        public void Delete([FromBody] Pessoa pessoa)
+        {
+            _pessoa.Delete(pessoa);
         }
 
     }

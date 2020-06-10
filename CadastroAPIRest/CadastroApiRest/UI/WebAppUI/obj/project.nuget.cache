@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jsMfEuzmxFeZIV9kEqfDCycJRkQ82mwuM6ZDAAG2b4GeS6T09YVqniIgbx3+mbw9C+frWOPzWHOiEwZvGoHLJQ==",
+  "dgSpecHash": "C1Kxi2q5YRtz5mmNain17rtIBd+ysuta1RLgkrz9ogui77iypk8xrpqk81GE7/TdyxQBxtPPbUsBUbVEq5w4vQ==",
   "success": true,
   "projectFilePath": "D:\\Temp\\AulaCs\\Aula5\\AulasCsharp\\CadastroAPIRest\\CadastroApiRest\\UI\\WebAppUI\\WebAppUI.csproj",
   "expectedPackageFiles": [
@@ -198,8 +198,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Arleys\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

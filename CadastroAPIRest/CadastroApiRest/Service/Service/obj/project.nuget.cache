@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6VCMebC4R+vmIPoHCV7+ysNEEvBDYvFEWGQqZHWlX+0JNAEhVsep3xxZAcM8B1bTrf6ov6S+Z/890MlZbJyc1A==",
+  "dgSpecHash": "CoMu7ZAfTqozI2mLUGuFH+LgNU8xmX5lvI96WGqjMHqiRVKHV1mHgjStoTveuE2gtk2eW4rdJF0piWWkFaokyA==",
   "success": true,
   "projectFilePath": "D:\\Temp\\AulaCs\\Aula5\\AulasCsharp\\CadastroAPIRest\\CadastroApiRest\\Service\\Service\\Service.csproj",
   "expectedPackageFiles": [
@@ -22,8 +22,7 @@
     "C:\\Users\\Arleys\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.4\\microsoft.extensions.primitives.3.1.4.nupkg.sha512",
     "C:\\Users\\Arleys\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\Arleys\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "C:\\Users\\Arleys\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
-    "C:\\Users\\Arleys\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\Arleys\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

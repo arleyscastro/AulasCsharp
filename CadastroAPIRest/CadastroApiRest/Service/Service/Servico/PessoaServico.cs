@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Model.Entity.Base;
+﻿using Model.Entity.Base;
 using Model.Entity.Entity;
 using Service.Interfaces;
+using System.Collections.Generic;
 
 namespace Service.Servico
 {
